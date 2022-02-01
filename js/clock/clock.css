@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 90vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(236, 113, 113, 0.4),
+    rgba(82, 142, 94, 0.4)), url("../../assets/images/fabian.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}
+
+.clock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    transform: rotateZ(-90deg);
+    border-radius: 50%;
+    opacity: .6;
+}
+
+.needle {
+    width: 100%;
+    height: 100%;
+    transform: translate(-2.2%, -2.2%);
+    position: relative;
+    border-radius: 50%;
+}
+
+.needle div {
+    transform-origin: left;
+    position: absolute;
+    top: 52%;
+    left: 52%;
+}
+
+#hour {
+    border: 1px solid white;
+    width: 45%;
+}
+
+#min {
+    border: 1px solid white;
+    width: 45%;
+}
+
+#second {
+    border: 1px solid #e81a5b;
+    width: 45%;
+}

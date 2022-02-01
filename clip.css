@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgba(9, 14, 9, 0.7);
+}
+
+.header {
+    height: 90vh;
+    background-image: linear-gradient(to right bottom, rgba(236, 113, 113, 0.4), rgba(82, 142, 94, 0.4)), url("./assets/images/fabian.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.header .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 1.3cm;
+    font-family: "Maiandra GD";
+    height: 60px;
+    letter-spacing: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-secondaryTexts div {
+    text-align: left;
+    display: block;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header-secondaryTexts {
+    position: relative;
+    animation: rotation 6s ease-in-out infinite;
+}
+
+@keyframes rotation {
+    0%, 25% {
+        transform: translateY(60px);
+    }
+
+    30%, 55% {
+        transform: translateY(0px);
+    }
+
+    60%, 100% {
+        transform: translateY(-60px);
+    }
+}
